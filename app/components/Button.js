@@ -18,17 +18,17 @@ const Button = ({ setData }) => {
   };
   console.log(category);
   return (
-    <div className="border-2 w-[70%] mx-auto py-20">
+    <div className="ml-5 w-full md:w-[70%] pb-5 mt-3 flex flex-wrap justify-center">
       <button
-        className="capitalize text-xl px-3 py-2  border-2 rounded-md bg-slate-200 m-4"
+        className="capitalize text-xl px-3 py-2 border-2 rounded-md bg-slate-200 m-2 md:m-4"
         onClick={() => handleCategory("all")}
       >
         All
       </button>
       {category.map((item, index) => (
         <button
-          className="capitalize text-xl px-3 py-2  border-2 rounded-md bg-slate-200 m-4"
           key={index}
+          className="capitalize text-xl px-3 py-2 border-2 rounded-md bg-slate-200 m-2 md:m-4"
           onClick={() => handleCategory(item)}
         >
           {item}

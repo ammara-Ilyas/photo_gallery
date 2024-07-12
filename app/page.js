@@ -3,8 +3,8 @@ import Button from "./components/Button";
 export default function Home() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="text-4xl font-bold mb-8">Image Gallery</h1>
+      <header className="">
+        <h1 className="text-5xl font-bold mt-16 text-center">Image Gallery</h1>
         <ImageGallery />
       </header>
     </div>

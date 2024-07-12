@@ -8,14 +8,14 @@ const ImageGallery = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <Button setData={setData} />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {imgData.map((image, index) => (
           <div key={index} className="relative overflow-hidden">
             <img
               src={image.img}
               alt={`Gallery image ${index + 1}`}
               width={500}
-              height={500}
+              height={200}
               className="w-full h-full object-cover"
             />
           </div>
